@@ -41,12 +41,12 @@ Optional live dialogue supports free-text input using your own Anthropic API key
 
 ## 技术文档 / Documentation
 
-**[完整技术文档入口：案例、实现、制作与验证](docs/README.md)**
+**[游戏开发文档：玩法、系统实现与技术迭代](docs/README.md)**
 
 - [六阶段程序化天空](docs/SKY.md) · [四种交互着色器](docs/SHADERS.md)
 - [资产预算与程序化外壳](docs/TOOLS.md) · [性能分析与优化](docs/PERFORMANCE.md)
 - [交互、声音与界面](docs/INTERACTION.md) · [AI 叙事迭代](docs/NARRATIVE.md)
-- [制作与 AIGC 辅助流程](docs/PRODUCTION.md) · [审阅与后续工作](docs/REVIEW.md)
+- [制作与 AIGC 辅助流程](docs/PRODUCTION.md) · [开发迭代与后续计划](docs/REVIEW.md)
 
 
 - [技术总览与模块架构](docs/TECHNICAL.md)
@@ -54,13 +54,10 @@ Optional live dialogue supports free-text input using your own Anthropic API key
 - [构建、运行与发布](docs/BUILD.md)
 - [本次验证与已知限制](docs/VALIDATION.md)
 
-本仓库用于试玩分发、技术说明与选定代码快照展示。GitHub 自动生成的 **Source code** 附件只包含此文档仓库，不是完整 Unity 工程。旧源码 Release 已由新的离线试玩发布取代。
+本仓库用于试玩分发、技术说明与选定代码快照展示。GitHub 自动生成的 **Source code** 附件只包含此文档仓库，不是完整 Unity 工程。
 
 本次发行使用 **2026-10-14 已有 Windows 构建**，于 2026-11-05 打包发布，并非当天重新编译。技术文档依据本地当前实现编写；完整 Unity 工程及原始制作素材未随本次文档上传。
 
-## 制作与资源 / Credits
+## 制作工具 / Credits
 
-Unity / C#：场景交互、物件查看、声音、界面与阶段表现。Python / Flask / Anthropic SDK：可选实时对话服务及预录数据制作。开发包含 AI 辅助；孩子声音使用 ElevenLabs。历史使用过 Will's Room、AllSky、PBR 200 Premium Materials 等素材，后续外壳与天空已有程序化替换；来源与适配详见制作章节。
-
-试玩分发不授予第三方素材的提取、再发布或商业复用许可；各素材权利归相应权利人。
-
+Unity / C# 实现探索、物件查看、声音、界面和阶段表现；Blender 与制作脚本用于资产整合，房间外壳和天空采用程序化实现。Python / Flask / Anthropic SDK 支持可选联网对话。孩子声音使用 ElevenLabs 预先制作，开发包含 AI 编程辅助和少量 AIGC 辅助贴图产出。详见[资产制作与场景整合](docs/PRODUCTION.md)。

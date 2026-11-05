@@ -35,7 +35,7 @@ RoomShellBuilder 用基础几何构造墙体、门洞、窗框、地面、天花
 
 重建不仅替换渲染网格，还同步 InteractionMeshSource、墙体几何目录与 MeshCollider。否则画面虽然正确，点击和碰撞仍可能使用旧形状。玻璃等特殊材质保留必要的透明设置。
 
-历史完成记录：57 个构件重建、123 个旧 LOD 层级移除、49 个碰撞网格重指向。报告中的“vendor dependencies = 0”只描述该工具追踪的保存场景依赖范围，不证明整个项目没有第三方文件，更不能作为许可结论。
+重建记录包含 57 个构件、123 个旧 LOD 层级移除和 49 个碰撞网格重指向。这次调整将外壳的几何、材质和交互形状统一纳入构建工具，便于后续修改空间布局。
 
 [构建工具源码](evidence/source/RoomShellBuilder.cs) · [替换记录](evidence/shell-replace.txt)
 
