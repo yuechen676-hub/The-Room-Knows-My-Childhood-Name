@@ -1,81 +1,49 @@
-> 历史记录：此页所述源码包已停止公开分发，安装步骤不再作为当前下载指南。当前试玩范围请查看默认分支。
+# The Room Knows My Childhood Name
+# 房间记得我的乳名
 
-The Room Knows My Childhood Name
+一个发生在童年卧室中的第一人称叙事游戏。玩家通过观察物件、聆听记忆与回应房间，经历六个阶段的情绪变化。
 
-A first-person narrative game set in a childhood bedroom. Through exploration, recorded memories and conversations with the room, the player moves through six emotional stages and discovers eleven clue objects.
+A first-person narrative game about exploring a childhood bedroom, listening to memories and responding to the room.
 
-Downloads / 下载
+## 下载试玩 / Play
 
-* Complete Unity project / 完整 Unity 工程: Download the source project — 2026-09-12
-* Release page / 发布页面: Open the release page
+**[下载 Windows 离线试玩 ZIP](https://github.com/yuechen676-hub/The-Room-Knows-My-Childhood-Name/releases/download/offline-demo-2026.11.05/TheRoomKnowsMyChildhoodName-OfflineDemo-Windows-x64.zip)** · [发布页与校验文件](https://github.com/yuechen676-hub/The-Room-Knows-My-Childhood-Name/releases/tag/offline-demo-2026.11.05)
 
-This download contains the Unity source project. No standalone executable is included.
+完整解压后运行 `TheRoomKnowsMyChildhoodName.exe`。需要 Windows 64 位；无需 Unity、Python、网络或 API 密钥。请保留解压后的全部文件。
 
-The archive contains the September 12, 2026 source snapshot. It retains the filename 已撤下的源码包 and release tag v2026.09.09 to preserve the original download link.
+Extract the entire ZIP and launch `TheRoomKnowsMyChildhoodName.exe`. Windows 64-bit; no Unity, Python, internet connection or API key required.
 
-中文说明：这是一个通过探索童年卧室、聆听录音、观察物件和与房间对话展开的第一人称叙事游戏。下载内容为完整 Unity 工程，不含可直接运行的游戏程序。ZIP 沿用原文件名，实际内容为 2026 年 9 月 12 日的工程版本。
+试玩采用**可选台词与预录模型文字回复**，保留场景探索、线索录音、六阶段流程及结尾；不支持自由输入，不代表实时模型的全部回应。中文 / English、阅读字号可在设置中切换。物件录音保留中文原声。
 
-解压后，在 Unity Hub 中添加包含 Assets、Packages 和 ProjectSettings 的文件夹。工程使用 Unity 6000.3.7f1；对话功能需要启动本地 Python 服务并配置 API 密钥，具体步骤见下文。
+This demo uses selectable lines and prerecorded model text. It includes the six-stage progression and ending. It does not generate live responses or accept free-form dialogue.
 
-Paths below refer to files inside the downloaded project ZIP.
+## 操作 / Controls
 
-Open the project
+| 输入 / Input | 功能 / Action |
+|---|---|
+| WASD / 鼠标 | 移动 / 观察 · Move / look |
+| 左键 / Left click | 交互 / 选择 · Interact / select |
+| 查看时按住右键 / Hold right mouse in inspection | 旋转物件 · Rotate object |
+| Ctrl / C | 蹲下 · Crouch |
+| Space | 站立时跳跃 · Jump while standing |
+| Enter | 打开房间对话 · Open room dialogue |
+| Esc | 关闭当前界面或暂停 · Close / pause |
 
-1. Download and extract the project using the ZIP link above. GitHub’s automatic “Source code” archives do not contain this project snapshot.
-2. Install Unity 6000.3.7f1 through Unity Hub and add the extracted project directory.
-3. Allow Unity to restore packages and import assets. The first import may take some time.
-4. Open Assets/Scenes/TheRoomKnowsMyChildhoodName.unity.
-5. Start the local dialogue service, then enter Play Mode.
+先探索并聆听当前阶段的录音，再与房间交谈。读完回复后关闭对话，阶段变化才会继续。找不到方向时可选择房间对话中的引导选项。
 
-Local dialogue setup
+## 技术文档 / Documentation
 
-The dialogue service requires Python 3.11 or later and an Anthropic API key.
+- [技术总览与模块架构](docs/TECHNICAL.md)
+- [离线数据、推进与实时接口](docs/DIALOGUE.md)（含实现细节及轻度剧透）
+- [构建、运行与发布](docs/BUILD.md)
+- [本次验证与已知限制](docs/VALIDATION.md)
 
-From the project root, run these commands in Windows PowerShell:
+本仓库用于试玩分发与技术说明。GitHub 自动生成的 **Source code** 附件只包含此文档仓库，不是完整 Unity 工程。旧源码 Release 已由新的离线试玩发布取代。
 
-python -m venv Deployment/.venv
-Deployment/.venv/Scripts/python.exe -m pip install -r Deployment/server/requirements.txt
-$env:ANTHROPIC_API_KEY = Read-Host 'Anthropic API key'
-$roomLocalToken = [guid]::NewGuid().ToString('N') + [guid]::NewGuid().ToString('N')
-$roomLocalConfig = @{ serviceUrl = 'http://127.0.0.1:5002'; accessToken = $roomLocalToken }
-[IO.File]::WriteAllText((Join-Path (Get-Location) 'room-service.editor.json'), ($roomLocalConfig | ConvertTo-Json))
-Deployment/.venv/Scripts/python.exe Deployment/server/editor_service.py
+本次发行使用 **2026-10-14 已有 Windows 构建**，于 2026-11-05 打包发布，并非当天重新编译。技术文档依据本地当前实现编写；完整 Unity 工程及原始制作素材未随本次文档上传。
 
-Keep the terminal open while playing in the Editor.
+## 制作与资源 / Credits
 
-The service runs at http://127.0.0.1:5002. Unity and the service must use the same local access token. The Editor reads room-service.editor.json from the project root when present, otherwise room-service.json.
+Unity / C#：场景交互、物件查看、声音、界面与阶段表现。Python / Flask / Anthropic SDK：可选实时对话服务及预录数据制作。开发包含 AI 辅助；孩子声音使用 ElevenLabs。场景资源包括 Will's Room、AllSky、PBR 200 Premium Materials 及项目制作的模型与素材。
 
-The model is configured by MODEL in Deployment/server/story.py and must be available to your API account. API credentials are not included in the project.
-
-On macOS/Linux, use the virtual environment’s bin/python executable and set ANTHROPIC_API_KEY in your shell. See Deployment/README.md for configuration details.
-
-Controls
-
-Input	Action
-WASD / mouse	Move / look
-Left Ctrl or C	Crouch
-Space	Jump while standing
-Left click	Interact with the highlighted object or displayed control
-Hold right mouse button during close inspection	Rotate the object
-Enter	Open text input or send a message
-Escape	Close inspection, leave text input or release the cursor, depending on context
-
-Object-specific actions appear in the inspection panel. Stage transitions wait for the dialogue panel to close.
-
-Project structure
-
-Location	Contents
-Assets/Scenes/	Main game scene
-Assets/Scripts/	Player movement, object interaction, inspection, dialogue UI and stage presentation
-Assets/Resources/	Clue data, recordings and interaction assets
-Packages/, LocalPackages/, ProjectSettings/	Package dependencies and project configuration
-Deployment/server/	Dialogue service and progression rules
-SubmissionPlanning/	Project statement, figures and supporting documentation
-
-Preserve the .meta files when moving or copying the project, as Unity uses them to maintain resource references.
-
-Notes
-
-The project has been checked for Unity compilation, main-scene loading and all eleven clue bindings. A complete six-stage playthrough and a fresh import on another computer have not been verified. Some pre-existing missing-script components are recorded in the project validation documents.
-
-Narrative and backend documents contain story spoilers.
+试玩分发不授予第三方素材的提取、再发布或商业复用许可；各素材权利归相应权利人。
