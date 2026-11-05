@@ -20,6 +20,7 @@
 | 拿起、翻看、记录、字幕与转场 | [交互、声音与界面](INTERACTION.md) |
 | 自由输入如何受叙事规则约束 | [AI 叙事系统与分类器迭代](NARRATIVE.md) |
 | 离线 77 个回复变体如何回放 | [对话数据与接口](DIALOGUE.md) |
+| 使用自己的 API Key 开启联网对话 | [联网安装、Key 输入与切回离线](LIVE-DIALOGUE.md) |
 | 资产整合与简要 AIGC 流程 | [制作流程与来源](PRODUCTION.md) |
 | 如何构建、打包、校验和运行 | [构建与发布](BUILD.md) |
 | 本次测了什么、尚未验证什么 | [验证报告](VALIDATION.md) |
