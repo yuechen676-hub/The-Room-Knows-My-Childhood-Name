@@ -1,0 +1,74 @@
+Scene: Assets/Scenes/TheRoomKnowsMyChildhoodName.unity
+Generated: 2026-10-07 13:54
+
+GEOMETRY
+Active renderers: 1436; unique meshes: 1009; triangles: 7,719,407; shadow-casting triangles: 7,472,569 (97 %)
+Renderers under a LODGroup: 164; triangles covered by LOD: 34,095
+Readable meshes (CPU copy kept): 550
+Renderers over 50k triangles: 40; over 20k triangles and under 0.5 m: 41
+
+Triangles by pack (top 20):
+  RuffleFrames               1,238,292  16.0 %  renderers   79  casting   1,238,292
+  StoryCurtain                 576,524  7.5 %  renderers   12  casting     576,524
+  ThreeOrbSconce               330,108  4.3 %  renderers   48  casting     254,652
+  RubyTeaSet                   329,180  4.3 %  renderers   23  casting     329,180
+  PolkaStool                   303,856  3.9 %  renderers   62  casting     303,856
+  CurledLamp                   297,224  3.9 %  renderers   18  casting     297,224
+  QuietLibrary                 237,417  3.1 %  renderers   41  casting     237,417
+  MemoryAlarm                  227,080  2.9 %  renderers   13  casting     227,080
+  MemoryBooks                  208,069  2.7 %  renderers   50  casting     208,069
+  WhisperingPhone              182,126  2.4 %  renderers   42  casting     181,614
+  MemoryGlasses                177,480  2.3 %  renderers   12  casting     177,480
+  RibbonShoeTable              176,696  2.3 %  renderers    9  casting     176,696
+  TiffanyLamp                  175,612  2.3 %  renderers   10  casting      91,356
+  StoryLibrary                 173,140  2.2 %  renderers  202  casting     171,860
+  TulipStand                   172,460  2.2 %  renderers    3  casting     172,460
+  PolkaDressChair              160,418  2.1 %  renderers    7  casting     160,418
+  DollLamp                     158,036  2.0 %  renderers   12  casting     135,948
+  FableLamp                    133,806  1.7 %  renderers    8  casting     102,486
+  StoryLamp                    125,828  1.6 %  renderers   12  casting     116,004
+  RococoMirror                 124,176  1.6 %  renderers    7  casting     124,176
+
+Densest props (triangles per metre of bounds, over 20k triangles, top 15):
+     57,966 tris   0.11 m  Memory_Glasses/Child__Paper
+     77,968 tris   0.18 m  Crushed_Story_Can/Story_Label
+     75,036 tris   0.22 m  Memory_Glasses/Adult__Paper
+     45,840 tris   0.15 m  Memory_Alarm_Clock/Rug_Terracotta
+     66,566 tris   0.24 m  Memory_Alarm_Clock/Crochet_Cotton
+     72,160 tris   0.27 m  01_Blue_Gingham (1)/01_Blue_Gingham_Blue_Gingham
+     72,160 tris   0.27 m  01_Blue_Gingham/01_Blue_Gingham_Blue_Gingham
+     57,840 tris   0.23 m  Memory_Alarm_Clock/Linen
+     32,371 tris   0.14 m  Ruby_Tea_Set (1)/Teapot_Body
+     49,574 tris   0.25 m  Whispering_Phone/Hand_Left/Hand_Left__Crackled_Ivory
+     49,572 tris   0.25 m  Whispering_Phone/Hand_Right/Hand_Right__Crackled_Ivory
+     63,440 tris   0.36 m  Primary_Color_Cabinet/Drawer_06_WideIvory/03_Ruby_Butter (1)/03_Ruby_Butter_Ruby_Cotton
+     63,440 tris   0.36 m  Primary_Color_Cabinet/Drawer_03_Ivory/03_Ruby_Butter_Drawer_03/03_Ruby_Butter_Ruby_Cotton
+     47,090 tris   0.27 m  Story_Linen_Lamp_Off/Black_Gold
+     63,440 tris   0.41 m  Primary_Color_Cabinet/Drawer_05_DeepBlue/02_Blue_Red_Tall (1)/02_Blue_Red_Tall_Blue_Cotton
+
+SHADOW LIGHTS (triangles inside each light's range; a point light draws up to 6 faces)
+    1,874,134 tris    195 casters  Point       range   2.2  Carnival_Lamp/Warm_Room_Light
+    7,396,234 tris   1259 casters  Spot        range   4.0  Daisy_Cup_Pendant/Warm_Downlight
+    7,472,569 tris   1394 casters  Directional range   0.0  Directional Light
+    1,449,264 tris    393 casters  Point       range   2.2  Fable_Lamp/Warm_Room_Light
+    2,356,050 tris    434 casters  Point       range   2.6  Quiet_Exit_Corridor/Quiet reflected fill
+      694,698 tris    262 casters  Point       range   4.2  Quiet_Exit_Corridor/Soft daylight beyond turn
+    2,812,979 tris    327 casters  Point       range   2.2  Seated_Doll_Lamp/Warm_Room_Light
+    1,815,420 tris    240 casters  Point       range   2.2  Tiffany_Rose_Lamp/Warm_Room_Light
+Sum over shadow lights, one pass each: 25,871,348
+
+TEXTURES (referenced by active renderers)
+Textures: 305; memory: 2,819 MB; 4096 or larger: 0
+Memory by pack (top 12):
+  PaperStories                 336 MB
+  LeartesStudios               188 MB
+  QuietLibrary                 149 MB
+  CarnivalLamp                 117 MB
+  ToothPurse                   107 MB
+  StoryLibrary                  91 MB
+  DancingTeapot                 85 MB
+  FableLamp                     85 MB
+  VelvetBench                   85 MB
+  PrimaryCabinet                75 MB
+  DreamBed                      64 MB
+  RibbonHouse                   64 MB

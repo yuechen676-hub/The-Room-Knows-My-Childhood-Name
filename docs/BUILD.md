@@ -41,3 +41,4 @@ Deployment/.venv/Scripts/python.exe -m unittest discover -s Deployment/server -p
 准备 ZIP → ZIP CRC 完整性检查 → SHA-256 → 上传为草稿 Release → 核对远程大小与 SHA-256 → 发布 → 删除用户要求移除的旧 Release。
 
 附件中的 `.sha256` 可与 PowerShell `Get-FileHash -Algorithm SHA256 <ZIP路径>` 对照。GitHub 自动生成的 Source code 是文档仓库快照，不是可运行试玩或完整 Unity 工程。
+

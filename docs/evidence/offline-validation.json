@@ -1,0 +1,9 @@
+{
+  "recordedLines": 54,
+  "recordedVariants": 77,
+  "bilingualVariants": "passed",
+  "earlyFinalAndSettle": "passed",
+  "headlessStartupSeconds": 30,
+  "errors": [],
+  "scope": "Headless startup and source JSON consistency only. No graphics verification or full manual playthrough."
+}
