@@ -1,0 +1,108 @@
+{
+  "date": "2026-11-05",
+  "scope": "Focused source, configuration, historical report and provenance review; not exhaustive binary review.",
+  "counts": {
+    "Assets/Scripts/*.cs": 59,
+    "Assets/Editor/*.cs": 105,
+    "Deployment/server/test_*.py": 7
+  },
+  "tests": {
+    "count": 66,
+    "passed": 66,
+    "durationSeconds": 0.259,
+    "command": "Deployment/.venv/Scripts/python.exe -m unittest discover -s Deployment/server -p test_*.py",
+    "liveAPI": false
+  },
+  "sources": [
+    {
+      "original": "Assets/Shaders/RoomProceduralSky.shader",
+      "snapshot": "source/RoomProceduralSky.shader",
+      "sha256": "35b0aeea8998319ee2aaa0a9fd90727084bfa54a50792f73d855c25908082df7"
+    },
+    {
+      "original": "Assets/Scripts/Sky/StageSkyPreset.cs",
+      "snapshot": "source/StageSkyPreset.cs",
+      "sha256": "a1b17c39c5887296d112399f73e5cd20dd6cdce2e1f8999396bd9ffe3280572d"
+    },
+    {
+      "original": "Assets/Scripts/Sky/SkyAtmosphereController.cs",
+      "snapshot": "source/SkyAtmosphereController.cs",
+      "sha256": "49f0404228cee9d722c93864b37ebbb96537f5bee8ecc67e731ccc330f6b009f"
+    },
+    {
+      "original": "Assets/Editor/SkyStagePreviewWindow.cs",
+      "snapshot": "source/SkyStagePreviewWindow.cs",
+      "sha256": "15c19d77e49a674623ccb6db8906ff1024970921f27269dad00dc9a53139ca93"
+    },
+    {
+      "original": "Assets/Scripts/Rendering/PlanarReflectionScissor.cs",
+      "snapshot": "source/PlanarReflectionScissor.cs",
+      "sha256": "ffd97883fd523ab8a421ea1052cb074a18ec5b6d5521f2146e1b3d8074ea8a7e"
+    },
+    {
+      "original": "Assets/Editor/RoomAssetBudget.cs",
+      "snapshot": "source/RoomAssetBudget.cs",
+      "sha256": "36082f0bf94c61ff7fd3898cf75c83d3217ed3bbf722da944aff6b2002a68df4"
+    },
+    {
+      "original": "Assets/Editor/RoomShellBuilder.cs",
+      "snapshot": "source/RoomShellBuilder.cs",
+      "sha256": "21dde269a8ac69736a0c81e0ba7109a4e397063c344c9b3f13fa08bb3f93f6ed"
+    },
+    {
+      "original": "Assets/RoomShell/Source~/generate_textures.py",
+      "snapshot": "source/generate_textures.py",
+      "sha256": "8e47b805ae8f81b436055073b55a0f159bc3aacbc8e00945ec090e44be5119b7"
+    },
+    {
+      "original": "Assets/Resources/Interaction/PortraitCondensationInput.hlsl",
+      "snapshot": "source/PortraitCondensationInput.hlsl",
+      "sha256": "8bbdc82e7f443a30241342bb3c909fa7a6823b91460148f66403d112deda0a46"
+    },
+    {
+      "original": "Assets/CradlePaper/Materials/PaperReverseInput.hlsl",
+      "snapshot": "source/PaperReverseInput.hlsl",
+      "sha256": "3a3e1dbf827b0006a6d0498cebb00f63c76db4724466d343e5a4449638515e17"
+    },
+    {
+      "original": "Assets/Resources/Interaction/WakeUpEyes.shader",
+      "snapshot": "source/WakeUpEyes.shader",
+      "sha256": "9a2f9be108c0e78492bebf2de6970a230537d2dbf30cbb0d16ec25a7df4df945"
+    },
+    {
+      "original": "Assets/Resources/Interaction/OutlineEdge.shader",
+      "snapshot": "source/OutlineEdge.shader",
+      "sha256": "9bd13100ca92fdb64d5f1a726a6d528eedc53e260762430cb99a0e95db64db97"
+    },
+    {
+      "original": "Assets/Scripts/RoomOfflineDemo.cs",
+      "snapshot": "source/RoomOfflineDemo.cs",
+      "sha256": "36a2a34ae00c2107194f016feeb09a663a9e36adb50baf7a373260f9fca15702"
+    },
+    {
+      "original": "Assets/Scripts/RoomStageOneTransition.cs",
+      "snapshot": "source/RoomStageOneTransition.cs",
+      "sha256": "a263f669af2d3cf160a4acdac8018450924780a25feee95107eeeb75e0db301b"
+    },
+    {
+      "original": "Assets/Scripts/RoomPerformanceProbe.cs",
+      "snapshot": "source/RoomPerformanceProbe.cs",
+      "sha256": "dddb9338ec953cd2dc03bc2b24f5182886629939d9e341945d3c019ee5a224d8"
+    },
+    {
+      "original": "Assets/Scripts/PortraitCondensation.cs",
+      "snapshot": "source/PortraitCondensation.cs",
+      "sha256": "c8d237aea11ed6da086db74fd426902a098da0a8b7bad13e3c222b6752423866"
+    },
+    {
+      "original": "Assets/Scripts/InteractionOcclusion.cs",
+      "snapshot": "source/InteractionOcclusion.cs",
+      "sha256": "0b0a42ca171f13185d70ecb72f4b73ff3a11a4e291eda2fdd17fed11e2e58fc8"
+    },
+    {
+      "original": "Assets/Editor/RoomOfflineDemoTools.cs",
+      "snapshot": "source/RoomOfflineDemoTools.cs",
+      "sha256": "d5d2c12fd26eb9cb90766bf2c267f0d679b988cfebdfb648e67bd6d3952250c8"
+    }
+  ]
+}
