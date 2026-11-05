@@ -1,6 +1,8 @@
 # The Room Knows My Childhood Name
 # 房间记得我童年的名字
 
+**版权与使用：** 本项目未提供仓库级开源许可。允许阅读、分享官方链接与个人非商业试玩；转载、重新分发或素材复用须遵循[版权与使用说明](COPYRIGHT.md)。第三方许可、法律允许的使用与 GitHub 平台功能另行适用。
+
 这是我围绕童年记忆与自我安慰创作的一款第一人称叙事游戏。玩家在一间卧室中观察物件、聆听记忆并回应房间，经历六个阶段的情绪变化。
 
 A first-person narrative game about exploring a childhood bedroom, listening to memories and responding to the room.
