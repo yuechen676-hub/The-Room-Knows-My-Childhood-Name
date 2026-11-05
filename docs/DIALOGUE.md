@@ -2,11 +2,13 @@
 
 [返回首页](../README.md) · 本页包含线索与推进实现细节。
 
-## 离线模式的选择
+## 为什么提供离线对话
 
-Windows 客户端读取可执行文件旁的 `room-service.json`。没有该文件，或文件中包含 `{"offline": true}` 时，载入预录对话。此次 ZIP 明确携带离线配置，不包含可选 LiveDialogue 工具，因此玩家无需启动服务器。
+为了让试玩不依赖 API 账户和网络，我将受探索条件约束的对话分支录制为数据，保留物件探索与阶段变化。
 
-编辑器另支持 `Tools > Room > Play Offline Demo in Editor`。有效服务配置则走实时对话。损坏的配置会显示错误并停用客户端，不能把它描述为总会自动退回离线。
+Windows 客户端读取可执行文件旁的 `room-service.json`。没有该文件，或文件中包含 `{"offline": true}` 时，载入预录对话。默认试玩包携带离线配置，不包含可选 LiveDialogue 工具，因此玩家无需启动服务器。
+
+编辑器另支持 `Tools > Room > Play Offline Demo in Editor`。有效服务配置则走实时对话。损坏的配置会显示错误并停用对话客户端，需要修正配置后重启。
 
 ## 玩家开启联网模式
 
@@ -43,7 +45,7 @@ Windows 客户端读取可执行文件旁的 `room-service.json`。没有该文�
 
 ## 实时接口
 
-以下供完整工程开发者参考；本次离线 ZIP 不需要这些接口。
+联网模式通过以下接口与服务通信；默认离线模式直接读取本地数据。
 
 | 请求 | 主要内容 |
 |---|---|
@@ -51,11 +53,11 @@ Windows 客户端读取可执行文件旁的 `room-service.json`。没有该文�
 | `POST /start` | `name`、`language`，建立会话 |
 | `POST /say` | `session_id`、`language`、`text`、`recovered_memories`、`discoveries` |
 
-客户端回应结构包含 `reply`、`stage`、`reply_stage`、`stage_completed`、`transition_effect`、`door_opened`、`ended`、`reveal_reply` 等。具体公开接口由 `serve.py` 包装；不要把 `story.py` 原型接口当作部署入口。
+客户端回应结构包含 `reply`、`stage`、`reply_stage`、`stage_completed`、`transition_effect`、`door_opened`、`ended`、`reveal_reply` 等。部署接口由 `serve.py` 包装，`story.py` 负责内部叙事逻辑。
 
-在线服务需要用户自行配置模型供应商凭据。模型名称由代码中的 `MODEL` 决定，是否可用取决于账户，未在本次发行中验证。API 密钥保留在服务端环境中，客户端仅持有服务访问令牌。生产配置不应提交进仓库。
+在线服务需要用户自行配置模型供应商凭据。模型名称由代码中的 `MODEL` 决定，是否可用取决于账户，尚未完成真实 API 验证。API 密钥保留在服务端环境中，客户端仅持有服务访问令牌。生产配置不应提交进仓库。
 
-## 验证边界
+## 数据检查
 
-JSON 结构、双语字段及收束标志检查不等于每一句内容均通过叙事审校，也不等于六阶段实际交互通关。详见[本次验证](VALIDATION.md)。
+自动检查覆盖 JSON 结构、双语字段与收束标志；对话内容和实际交互流程另需人工试玩检查。已完成的检查见[测试报告](VALIDATION.md)。
 
