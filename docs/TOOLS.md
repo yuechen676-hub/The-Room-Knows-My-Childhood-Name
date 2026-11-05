@@ -8,7 +8,6 @@
 
 同一 mesh 的复用与每个 renderer 的场景实例成本分开记录；否则容易把“唯一网格很少”误读成“绘制负担很小”。按三角形/米排序小物件，可优先定位近看细节需要保留、但几何密度异常高的对象。
 
-[报告工具源码](evidence/source/RoomAssetBudget.cs)
 
 ## 2026-10-07 的资产快照
 
@@ -37,7 +36,7 @@ RoomShellBuilder 用基础几何构造墙体、门洞、窗框、地面、天花
 
 重建记录包含 57 个构件、123 个旧 LOD 层级移除和 49 个碰撞网格重指向。这次调整将外壳的几何、材质和交互形状统一纳入构建工具，便于后续修改空间布局。
 
-[构建工具源码](evidence/source/RoomShellBuilder.cs) · [替换记录](evidence/shell-replace.txt)
+[替换记录](evidence/shell-replace.txt)
 
 ## 从周期噪声生成可平铺贴图
 
@@ -49,7 +48,6 @@ RoomShellBuilder 用基础几何构造墙体、门洞、窗框、地面、天花
 
 这是离线制作脚本，玩家运行时加载已生成的纹理，不承担 FFT 生成成本。
 
-[贴图生成脚本](evidence/source/generate_textures.py)
 
 ## 为什么没有直接采用自动 LOD
 
