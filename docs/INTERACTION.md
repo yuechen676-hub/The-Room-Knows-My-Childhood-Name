@@ -16,7 +16,6 @@ InteractionOcclusion 对可见几何作精细测试：将射线转换到相应�
 
 这样，身体碰撞保留稳定的阻挡体积，点击则依据可见几何判断遮挡。边界浮点舍入也可能改变命中结果，因此优化 bounds 构建时保留原有 Encapsulate 的舍入顺序，并提供诊断开关对比旧实现。
 
-[遮挡实现快照](evidence/source/InteractionOcclusion.cs)
 
 ## 检视并非单一旋转按钮
 
@@ -42,7 +41,6 @@ ClueSoundLure 只针对当前阶段尚未完成的目标，在查看、对话、
 
 最终叙事完成先使出口可用；玩家主动使用钥匙、门逐渐消失、走出门槛后才淡出与进入结束页。走廊光的出现时机与六阶段收束相关，不属于额外线索。
 
-[转场控制快照](evidence/source/RoomStageOneTransition.cs)
 
 ## 双语与可读性
 

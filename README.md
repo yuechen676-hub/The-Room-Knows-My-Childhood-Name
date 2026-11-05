@@ -19,13 +19,11 @@ Extract the entire ZIP and launch `TheRoomKnowsMyChildhoodName.exe`. Windows 64-
 
 This demo uses selectable lines and prerecorded model text. It includes the six-stage progression and ending. It does not generate live responses or accept free-form dialogue.
 
-## 可选联网对话 / Optional live dialogue
+## 联网模式说明 / Live dialogue
 
-也可以使用自己的 **Anthropic API Key** 体验自由输入与实时模型回复。下载可选 LiveDialogue 工具，放到游戏旁边；双击 `启动实时对话.cmd`，在终端中输入 Key，再启动游戏。需要 Python 3.11+ 和网络，API 用量由自己的账户承担。
+项目包含联网自由对话实现，但联网源码补充包已停止公开下载。当前公开试玩使用离线预录对话，无需 API Key。系统设计见[联网模式说明](docs/LIVE-DIALOGUE.md)。
 
-**[联网配置、Key 输入位置与常见问题](docs/LIVE-DIALOGUE.md)**
-
-Optional live dialogue supports free-text input using your own Anthropic API key. See the setup guide above. The default demo remains offline.
+The live-dialogue source add-on is no longer publicly distributed. The downloadable demo runs offline without an API key.
 
 ## 操作 / Controls
 
@@ -56,9 +54,9 @@ Optional live dialogue supports free-text input using your own Anthropic API key
 - [构建、运行与发布](docs/BUILD.md)
 - [测试结果与已知限制](docs/VALIDATION.md)
 
-本仓库用于试玩分发、技术说明与选定代码快照展示。GitHub 自动生成的 **Source code** 附件只包含此文档仓库，不是完整 Unity 工程。
+本仓库用于试玩分发、技术说明与效果展示。GitHub 自动生成的 **Source code** 附件只包含此文档仓库，不是完整 Unity 工程。
 
-当前试玩基于 **2026-10-14 Windows 构建**，于 2026-11-05 打包发布。文档介绍开发工程中的实现；仓库提供试玩、技术说明和选定代码摘录，完整 Unity 工程及原始制作素材未公开。
+当前试玩基于 **2026-10-14 Windows 构建**，于 2026-11-05 打包发布。文档介绍开发工程中的实现；仓库提供试玩、技术说明和效果图例，完整 Unity 工程及原始制作素材未公开。
 
 ## 制作与工具 / Credits
 

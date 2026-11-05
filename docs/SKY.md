@@ -29,7 +29,6 @@
 
 云在星月之后合成，因此可以遮住星点和月亮。星点亮度变化与星点是否存在分别控制，避免密度参数只把所有星点一起变暗。当前云层使用四层 fBm，限制噪声叠加的复杂度；各层独立的 GPU 成本尚未测量。
 
-[天空 Shader 快照](evidence/source/RoomProceduralSky.shader)
 
 ## 阶段参数与过渡
 
@@ -39,7 +38,6 @@ StageSkyPreset 保存阶段编号、意图说明、过渡时长和 SkySettings�
 
 材质运行时克隆，避免把播放期间的参数写回原始资源。月光只在找到唯一方向光或显式引用时接管；多个方向光时不随意选择。
 
-[预设与插值](evidence/source/StageSkyPreset.cs) · [运行时控制器](evidence/source/SkyAtmosphereController.cs)
 
 ## 预览工具为什么是实现的一部分
 
@@ -47,7 +45,6 @@ StageSkyPreset 保存阶段编号、意图说明、过渡时长和 SkySettings�
 
 工具保存当前天空、环境光、雾与灯光状态，使用临时材质预览，关闭时恢复；将效果写入场景是独立操作。这样可以检查“第 2 阶段过渡到第 3 阶段中间是否突变”，无需每次从头通关。
 
-[预览窗口快照](evidence/source/SkyStagePreviewWindow.cs)
 
 ## 与叙事节奏衔接
 

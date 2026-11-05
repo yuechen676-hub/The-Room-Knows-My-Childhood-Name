@@ -14,7 +14,6 @@
 
 这里采用可控的表面遮罩与采样，便于按录音时长编排效果，无需流体模拟。水痕呈现房间对照片的掩饰，保留说辞与现实之间的不确定性。
 
-[材质输入扩展](evidence/source/PortraitCondensationInput.hlsl) · [进度控制](evidence/source/PortraitCondensation.cs)
 
 ## 2. 睁眼：实时画面、眼睑遮罩与聚焦
 
@@ -24,7 +23,6 @@ WakeUpEyes 接收实时房间画面。片元根据水平位置计算眼睑开口
 
 关键参数是 `_Open`、`_Blur`、`_Exposure`。几何开口与光适应分开，便于调节睁眼速度而不同时改变亮度曲线。效果直接合成实时场景，因此睁眼后能自然接入玩家当前所在的房间。
 
-[着色器快照](evidence/source/WakeUpEyes.shader)
 
 ## 3. 悬停描边：控制像素宽度
 
@@ -36,7 +34,6 @@ WakeUpEyes 接收实时房间画面。片元根据水平位置计算眼睑开口
 
 描边表示“这里可交互”，不表示物件必然是当前阶段线索。
 
-[描边 Pass](evidence/source/OutlineEdge.shader)
 
 ## 4. 纸背墨迹：复用纸张光照
 
@@ -46,7 +43,6 @@ WakeUpEyes 接收实时房间画面。片元根据水平位置计算眼睑开口
 
 我将墨迹呈现与发现判定分开：着色器负责画出文字，观察代码检查翻转和可见条件，再写入 discoveries。这样只有玩家实际看见的细节才会进入对话上下文。
 
-[墨迹输入扩展](evidence/source/PaperReverseInput.hlsl)
 
 ## 视觉检查方法
 

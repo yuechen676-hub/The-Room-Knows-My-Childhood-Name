@@ -10,9 +10,9 @@ Windows 客户端读取可执行文件旁的 `room-service.json`。没有该文�
 
 编辑器另支持 `Tools > Room > Play Offline Demo in Editor`。有效服务配置则走实时对话。损坏的配置会显示错误并停用对话客户端，需要修正配置后重启。
 
-## 玩家开启联网模式
+## 联网模式的分发范围
 
-可选 LiveDialogue 工具现作为独立补充包提供，不改变默认离线 ZIP。安装方式与终端中的 API Key 输入步骤见[联网指南](LIVE-DIALOGUE.md)。这是同一客户端的另一条对话路径，需要自己的 Anthropic API 账户。
+联网服务属于开发实现，源码补充包已停止公开下载。当前公开试玩采用离线模式，详见[联网模式说明](LIVE-DIALOGUE.md)。
 
 ## 数据结构
 

@@ -10,7 +10,7 @@
 
 9 月 30 日使用 3 秒预热、12 秒采样；10 月 5 日候选方案使用 2 秒预热、8 秒采样。10 月 7 日标题菜单与出生视角变化，因此不能把跨轮结果当成严格控制变量实验。
 
-[探针源码](evidence/source/RoomPerformanceProbe.cs) · [10 月 5 日原始数据](evidence/gpu-baseline.json)
+[10 月 5 日原始数据](evidence/gpu-baseline.json)
 
 ## 发现：多次渲染放大了几何成本
 
@@ -41,7 +41,7 @@ RenderTexture 按对应矩形分配，保持原像素密度，以 32 像素分�
 
 这轮实验中，GPU 时间约下降 22%，P95 约下降 29%。同期四方向截图检查发现差异集中在镜内边缘。以上结果对应 10 月 5 日的实验构建。
 
-[裁剪实现](evidence/source/PlanarReflectionScissor.cs) · [候选原始数据](evidence/mirror-candidates.json)
+[候选原始数据](evidence/mirror-candidates.json)
 
 ## 阶段卡顿：音频，而非 DX12 预热
 
