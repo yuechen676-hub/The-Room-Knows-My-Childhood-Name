@@ -17,6 +17,14 @@ Extract the entire ZIP and launch `TheRoomKnowsMyChildhoodName.exe`. Windows 64-
 
 This demo uses selectable lines and prerecorded model text. It includes the six-stage progression and ending. It does not generate live responses or accept free-form dialogue.
 
+## 可选联网对话 / Optional live dialogue
+
+也可以使用自己的 **Anthropic API Key** 体验自由输入与实时模型回复。下载可选 LiveDialogue 工具，放到游戏旁边；双击 `启动实时对话.cmd`，在终端中输入 Key，再启动游戏。需要 Python 3.11+ 和网络，API 用量由自己的账户承担。
+
+**[联网配置、Key 输入位置与常见问题](docs/LIVE-DIALOGUE.md)**
+
+Optional live dialogue supports free-text input using your own Anthropic API key. See the setup guide above. The default demo remains offline.
+
 ## 操作 / Controls
 
 | 输入 / Input | 功能 / Action |
