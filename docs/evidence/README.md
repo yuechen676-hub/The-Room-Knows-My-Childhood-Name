@@ -31,3 +31,5 @@ URP Lit 输入扩展依赖 Unity 包，其原有许可与归属说明随源码�
 
 `figures/` 收录制作过程中保存的 11 张 JPG，用于展示天空、着色器、外壳和优化前后的差异。图例对应开发过程中的效果，发行测试范围见[测试报告](../VALIDATION.md)。
 
+另收录两张筛选后用于相框材质的 LoRA 辅助插画原图：`lora-selected-labyrinth.png` 与 `lora-selected-bedroom.png`。制作流程与材质对应见[资产制作](../PRODUCTION.md)。
+
