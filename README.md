@@ -1,7 +1,7 @@
 # The Room Knows My Childhood Name
 # 房间记得我的乳名
 
-一个发生在童年卧室中的第一人称叙事游戏。玩家通过观察物件、聆听记忆与回应房间，经历六个阶段的情绪变化。
+这是我围绕童年记忆与自我安慰创作的一款第一人称叙事游戏。玩家在一间卧室中观察物件、聆听记忆并回应房间，经历六个阶段的情绪变化。
 
 A first-person narrative game about exploring a childhood bedroom, listening to memories and responding to the room.
 
@@ -52,12 +52,12 @@ Optional live dialogue supports free-text input using your own Anthropic API key
 - [技术总览与模块架构](docs/TECHNICAL.md)
 - [离线数据、推进与实时接口](docs/DIALOGUE.md)（含实现细节及轻度剧透）
 - [构建、运行与发布](docs/BUILD.md)
-- [本次验证与已知限制](docs/VALIDATION.md)
+- [测试结果与已知限制](docs/VALIDATION.md)
 
 本仓库用于试玩分发、技术说明与选定代码快照展示。GitHub 自动生成的 **Source code** 附件只包含此文档仓库，不是完整 Unity 工程。
 
-本次发行使用 **2026-10-14 已有 Windows 构建**，于 2026-11-05 打包发布，并非当天重新编译。技术文档依据本地当前实现编写；完整 Unity 工程及原始制作素材未随本次文档上传。
+当前试玩基于 **2026-10-14 Windows 构建**，于 2026-11-05 打包发布。文档介绍开发工程中的实现；仓库提供试玩、技术说明和选定代码摘录，完整 Unity 工程及原始制作素材未公开。
 
-## 制作工具 / Credits
+## 制作与工具 / Credits
 
 Unity / C# 实现探索、物件查看、声音、界面和阶段表现；Blender 与制作脚本用于资产整合，房间外壳和天空采用程序化实现。Python / Flask / Anthropic SDK 支持可选联网对话。孩子声音使用 ElevenLabs 预先制作，开发包含 AI 编程辅助和少量 AIGC 辅助贴图产出。详见[资产制作与场景整合](docs/PRODUCTION.md)。

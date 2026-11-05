@@ -6,7 +6,7 @@
 
 下载首页明确标注的 OfflineDemo Windows x64 ZIP，完整解压，双击 exe。首次启动可以在设置中选择中文 / English 与字号。不要移动单独的 exe，也不要从压缩包内部运行。
 
-当前发行只提供 Windows 64 位。macOS / Linux 没有在此次发布中构建或验证。硬件最低要求尚未做系统性测试，不能据启动成功推断所有显卡均可运行。
+当前发行只提供 Windows 64 位。macOS / Linux 尚无构建与测试记录，最低硬件配置也尚未完成系统性测试。
 
 ## 从完整工程构建
 
@@ -20,7 +20,7 @@
 6. 输出到 `Builds/WindowsDemo/`，检查 Unity 构建日志是否成功。
 7. 打包 exe、Data、MonoBleedingEdge、引擎 DLL 及运行所需目录，并附离线配置与操作说明。
 
-现有构建工具还复制可选 LiveDialogue 工具到输出目录；此次纯离线发行在打包阶段排除此目录。离线对白修改后必须重新构建，不能只修改工程 JSON 就认为已发布 exe 会更新。
+现有构建工具还复制可选 LiveDialogue 工具到输出目录；默认离线发行在打包阶段排除此目录。离线对白位于构建资源中，修改工程 JSON 后需要重新构建并发布。
 
 ## 玩家开启实时对话
 
@@ -36,13 +36,13 @@ Deployment/.venv/Scripts/python.exe -m pip install -r Deployment/server/requirem
 Deployment/.venv/Scripts/python.exe -m unittest discover -s Deployment/server -p "test_*.py"
 ```
 
-实时配置为本地 `room-service.editor.json` 或构建旁的 `room-service.json`，包括 `serviceUrl` 与 `accessToken`。本地服务可监听 127.0.0.1:5002；客户端与服务端令牌必须一致。供应商密钥使用环境变量，不随试玩分发。本次没有调用付费模型进行验收。
+实时配置为本地 `room-service.editor.json` 或构建旁的 `room-service.json`，包括 `serviceUrl` 与 `accessToken`。本地服务可监听 127.0.0.1:5002；客户端与服务端令牌必须一致。供应商密钥使用环境变量，不随试玩分发。真实 API 的验收状态见[测试报告](VALIDATION.md)。
 
 ## 发布流程
 
 当前发行标签：`offline-demo-2026.11.05`。使用 2026-10-14 已有构建，发布日期与编译日期明确分开。
 
-准备 ZIP → ZIP CRC 完整性检查 → SHA-256 → 上传为草稿 Release → 核对远程大小与 SHA-256 → 发布 → 删除用户要求移除的旧 Release。
+准备 ZIP → ZIP CRC 完整性检查 → SHA-256 → 上传为草稿 Release → 核对远程大小与 SHA-256 → 发布。
 
 附件中的 `.sha256` 可与 PowerShell `Get-FileHash -Algorithm SHA256 <ZIP路径>` 对照。GitHub 自动生成的 Source code 是文档仓库快照，不是可运行试玩或完整 Unity 工程。
 
