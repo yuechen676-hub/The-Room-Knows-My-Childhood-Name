@@ -9,9 +9,9 @@ A first-person narrative game about exploring a childhood bedroom, listening to 
 
 ## 试玩 / Play
 
-**有兴趣尝试离线试玩版本和 API 联网版本，请联系作者。** 可通过 [GitHub 主页](https://github.com/yuechen676-hub)或[仓库 Issue](https://github.com/yuechen676-hub/The-Room-Knows-My-Childhood-Name/issues)留言。试玩版目前不公开下载。
+**有兴趣尝试离线试玩版本和 API 联网版本，请联系作者：[zhiruizh2025@163.com](mailto:zhiruizh2025@163.com)**，也可以在[仓库 Issue](https://github.com/yuechen676-hub/The-Room-Knows-My-Childhood-Name/issues) 留言。试玩版目前不公开下载。
 
-**Interested in trying the offline demo or the live API version? Please contact the author** via [GitHub](https://github.com/yuechen676-hub) or an [Issue](https://github.com/yuechen676-hub/The-Room-Knows-My-Childhood-Name/issues). The demo is not publicly downloadable at the moment.
+**Interested in trying the offline demo or the live API version? Please contact the author at [zhiruizh2025@163.com](mailto:zhiruizh2025@163.com)** or open an [Issue](https://github.com/yuechen676-hub/The-Room-Knows-My-Childhood-Name/issues). The demo is not publicly downloadable at the moment.
 
 - **离线试玩版：** Windows 64 位，无需 Unity、Python、网络或 API Key。采用**可选台词与预录模型文字回复**，保留场景探索、线索录音、六阶段流程及结尾；不支持自由输入。中文 / English、阅读字号可在设置中切换，物件录音保留中文原声。
 - **API 联网版：** 支持自由输入，由 Python 服务调用语言模型实时回应，并结合阶段规则判断推进。系统设计见[联网模式说明](docs/LIVE-DIALOGUE.md)。

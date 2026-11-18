@@ -2,7 +2,7 @@
 
 项目：**《房间记得我童年的名字》 / The Room Knows My Childhood Name**
 
-项目维护与授权联系：[yuechen676-hub](https://github.com/yuechen676-hub)。说明日期：2026-11-06。
+项目维护与授权联系：[yuechen676-hub](https://github.com/yuechen676-hub) · [zhiruizh2025@163.com](mailto:zhiruizh2025@163.com)。说明日期：2026-11-06。
 
 ## 权利范围
 
@@ -13,7 +13,7 @@
 ## 允许的使用
 
 - 阅读公开文档、查看展示内容，以及分享本仓库的原始链接。
-- 经作者提供的离线试玩版或 API 联网版，仅限获得者本人用于个人、非商业试玩；可以为该用途在自己的设备上安装、运行并配置所需依赖。联网服务费用由使用者承担。有兴趣试玩请联系作者。
+- 经作者提供的离线试玩版或 API 联网版，仅限获得者本人用于个人、非商业试玩；可以为该用途在自己的设备上安装、运行并配置所需依赖。联网服务费用由使用者承担。有兴趣试玩请发邮件至 [zhiruizh2025@163.com](mailto:zhiruizh2025@163.com)。
 - 适用法律允许的使用，以及 GitHub 服务条款明确允许的平台功能。
 
 ## 需要事先书面许可的使用
@@ -36,7 +36,7 @@
 
 All rights are reserved in the portions of this project for which the author holds the applicable rights, except where separately stated. No repository-wide open-source license is granted.
 
-Viewing the public documentation and sharing links to the official repository are permitted. Builds provided directly by the author (the offline demo or the live API version) may be run by the recipient for personal, non-commercial play, including installing and configuring dependencies for that purpose. To request a build, please contact the author.
+Viewing the public documentation and sharing links to the official repository are permitted. Builds provided directly by the author (the offline demo or the live API version) may be run by the recipient for personal, non-commercial play, including installing and configuring dependencies for that purpose. To request a build, please email zhiruizh2025@163.com.
 
 Except as permitted above, by applicable law, or by a separate license, prior written permission is required to republish substantial documentation, redistribute project files, reuse artwork or audiovisual material, or incorporate code or assets into other projects or commercial products. Attribution alone does not grant permission. Do not misrepresent this work as your own.
 
