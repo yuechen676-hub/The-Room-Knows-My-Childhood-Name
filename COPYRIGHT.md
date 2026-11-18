@@ -6,14 +6,14 @@
 
 ## 权利范围
 
-对于项目作者依法享有著作权的文档、代码、图像、音视频及游戏内容，除另有明确说明外，保留所有权利。本仓库用于作品展示、技术交流与试玩分发，未提供仓库级开源许可。
+对于项目作者依法享有著作权的文档、代码、图像、音视频及游戏内容，除另有明确说明外，保留所有权利。本仓库用于作品展示与技术交流，未提供仓库级开源许可。
 
 本说明仅适用于作者有权授权的部分。第三方代码、字体、依赖及其他内容继续适用各自许可；涉及 AIGC 辅助内容的权利范围以适用法律、人工创作贡献和相关服务条款为准。本说明不将全部素材认定为纯手工原创，也不扩大作者对第三方内容的权利。
 
 ## 允许的使用
 
-- 阅读公开文档、查看展示内容，以及分享本仓库和官方发布页的原始链接。
-- 从官方发布页下载试玩及联网补充工具，用于个人、非商业试玩；可以为该用途在自己的设备上安装、运行并配置所需依赖。联网服务费用由使用者承担。
+- 阅读公开文档、查看展示内容，以及分享本仓库的原始链接。
+- 经作者提供的离线试玩版或 API 联网版，仅限获得者本人用于个人、非商业试玩；可以为该用途在自己的设备上安装、运行并配置所需依赖。联网服务费用由使用者承担。有兴趣试玩请联系作者。
 - 适用法律允许的使用，以及 GitHub 服务条款明确允许的平台功能。
 
 ## 需要事先书面许可的使用
@@ -36,7 +36,7 @@
 
 All rights are reserved in the portions of this project for which the author holds the applicable rights, except where separately stated. No repository-wide open-source license is granted.
 
-Viewing the public documentation, sharing links to the official repository, and downloading and running the official demo and optional dialogue tools for personal, non-commercial play are permitted. This includes installing and configuring dependencies for that purpose.
+Viewing the public documentation and sharing links to the official repository are permitted. Builds provided directly by the author (the offline demo or the live API version) may be run by the recipient for personal, non-commercial play, including installing and configuring dependencies for that purpose. To request a build, please contact the author.
 
 Except as permitted above, by applicable law, or by a separate license, prior written permission is required to republish substantial documentation, redistribute project files, reuse artwork or audiovisual material, or incorporate code or assets into other projects or commercial products. Attribution alone does not grant permission. Do not misrepresent this work as your own.
 

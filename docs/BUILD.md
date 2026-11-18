@@ -4,7 +4,7 @@
 
 ## 玩家运行
 
-下载首页明确标注的 OfflineDemo Windows x64 ZIP，完整解压，双击 exe。首次启动可以在设置中选择中文 / English 与字号。不要移动单独的 exe，也不要从压缩包内部运行。
+试玩版目前不公开下载，有兴趣尝试离线试玩版本和 API 联网版本，请联系作者。收到 Windows x64 ZIP 后完整解压，双击 exe。首次启动可以在设置中选择中文 / English 与字号。不要移动单独的 exe，也不要从压缩包内部运行。
 
 当前发行只提供 Windows 64 位。macOS / Linux 尚无构建与测试记录，最低硬件配置也尚未完成系统性测试。
 
@@ -24,7 +24,7 @@
 
 ## 联网实现的分发范围
 
-联网服务的完整源码与补充包已停止公开分发。当前公开下载仅提供离线试玩，详见[联网模式说明](LIVE-DIALOGUE.md)。
+离线试玩版与 API 联网版都不公开分发，联网服务的完整源码也不公开。如需试玩请联系作者，详见[联网模式说明](LIVE-DIALOGUE.md)。
 
 ## 可选实时开发
 
@@ -40,9 +40,9 @@ Deployment/.venv/Scripts/python.exe -m unittest discover -s Deployment/server -p
 
 ## 发布流程
 
-当前发行标签：`offline-demo-2026.11.05`。使用 2026-10-14 已有构建，发布日期与编译日期明确分开。
+当前试玩包使用 2026-10-14 的构建，于 2026-11-05 打包，由作者单独提供，不在本仓库公开发布。
 
-准备 ZIP → ZIP CRC 完整性检查 → SHA-256 → 上传为草稿 Release → 核对远程大小与 SHA-256 → 发布。
+打包流程：准备 ZIP → ZIP CRC 完整性检查 → 生成 SHA-256 → 交付前核对大小与 SHA-256。
 
-附件中的 `.sha256` 可与 PowerShell `Get-FileHash -Algorithm SHA256 <ZIP路径>` 对照。GitHub 自动生成的 Source code 是文档仓库快照，不是可运行试玩或完整 Unity 工程。
+收到试玩包后，可用 PowerShell `Get-FileHash -Algorithm SHA256 <ZIP路径>` 与[测试报告](VALIDATION.md)中的校验值对照。本仓库只包含文档，不是可运行试玩或完整 Unity 工程。
 

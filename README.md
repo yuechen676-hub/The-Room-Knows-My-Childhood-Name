@@ -1,29 +1,23 @@
 # The Room Knows My Childhood Name
 # 房间记得我童年的名字
 
-**版权与使用：** 本项目未提供仓库级开源许可。允许阅读、分享官方链接与个人非商业试玩；转载、重新分发或素材复用须遵循[版权与使用说明](COPYRIGHT.md)。第三方许可、法律允许的使用与 GitHub 平台功能另行适用。
+**版权与使用：** 本项目未提供仓库级开源许可。允许阅读与分享官方链接；转载、重新分发或素材复用须遵循[版权与使用说明](COPYRIGHT.md)。第三方许可、法律允许的使用与 GitHub 平台功能另行适用。
 
 这是我围绕童年记忆与自我安慰创作的一款第一人称叙事游戏。玩家在一间卧室中观察物件、聆听记忆并回应房间，经历六个阶段的情绪变化。
 
 A first-person narrative game about exploring a childhood bedroom, listening to memories and responding to the room.
 
-## 下载试玩 / Play
+## 试玩 / Play
 
-**[下载 Windows 离线试玩 ZIP](https://github.com/yuechen676-hub/The-Room-Knows-My-Childhood-Name/releases/download/offline-demo-2026.11.05/TheRoomKnowsMyChildhoodName-OfflineDemo-Windows-x64.zip)** · [发布页与校验文件](https://github.com/yuechen676-hub/The-Room-Knows-My-Childhood-Name/releases/tag/offline-demo-2026.11.05)
+**有兴趣尝试离线试玩版本和 API 联网版本，请联系作者。** 可通过 [GitHub 主页](https://github.com/yuechen676-hub)或[仓库 Issue](https://github.com/yuechen676-hub/The-Room-Knows-My-Childhood-Name/issues)留言。试玩版目前不公开下载。
 
-完整解压后运行 `TheRoomKnowsMyChildhoodName.exe`。需要 Windows 64 位；无需 Unity、Python、网络或 API 密钥。请保留解压后的全部文件。
+**Interested in trying the offline demo or the live API version? Please contact the author** via [GitHub](https://github.com/yuechen676-hub) or an [Issue](https://github.com/yuechen676-hub/The-Room-Knows-My-Childhood-Name/issues). The demo is not publicly downloadable at the moment.
 
-Extract the entire ZIP and launch `TheRoomKnowsMyChildhoodName.exe`. Windows 64-bit; no Unity, Python, internet connection or API key required.
+- **离线试玩版：** Windows 64 位，无需 Unity、Python、网络或 API Key。采用**可选台词与预录模型文字回复**，保留场景探索、线索录音、六阶段流程及结尾；不支持自由输入。中文 / English、阅读字号可在设置中切换，物件录音保留中文原声。
+- **API 联网版：** 支持自由输入，由 Python 服务调用语言模型实时回应，并结合阶段规则判断推进。系统设计见[联网模式说明](docs/LIVE-DIALOGUE.md)。
 
-试玩采用**可选台词与预录模型文字回复**，保留场景探索、线索录音、六阶段流程及结尾；不支持自由输入，不代表实时模型的全部回应。中文 / English、阅读字号可在设置中切换。物件录音保留中文原声。
-
-This demo uses selectable lines and prerecorded model text. It includes the six-stage progression and ending. It does not generate live responses or accept free-form dialogue.
-
-## 联网模式说明 / Live dialogue
-
-项目包含联网自由对话实现，但联网源码补充包已停止公开下载，若想尝试联网API版本，请联系作者。当前公开试玩使用离线预录对话，无需 API Key。系统设计见[联网模式说明](docs/LIVE-DIALOGUE.md)。
-
-The live-dialogue source add-on is no longer publicly distributed. The downloadable demo runs offline without an API key.
+- **Offline demo:** Windows 64-bit; selectable lines with prerecorded model text, including the six-stage progression and ending. No internet connection or API key required.
+- **Live API version:** free-form dialogue through a Python service and a language model, with stage rules governing progression.
 
 ## 操作 / Controls
 
@@ -54,9 +48,9 @@ The live-dialogue source add-on is no longer publicly distributed. The downloada
 - [构建、运行与发布](docs/BUILD.md)
 - [测试结果与已知限制](docs/VALIDATION.md)
 
-本仓库用于试玩分发、技术说明与效果展示。GitHub 自动生成的 **Source code** 附件只包含此文档仓库，不是完整 Unity 工程。
+本仓库用于技术说明与效果展示，只包含文档和图例，不是完整 Unity 工程，也不提供试玩下载。
 
-当前试玩基于 **2026-10-14 Windows 构建**，于 2026-11-05 打包发布。文档介绍开发工程中的实现；仓库提供试玩、技术说明和效果图例，完整 Unity 工程及原始制作素材未公开。
+文档介绍开发工程中的实现；完整 Unity 工程、试玩构建及原始制作素材未公开。试玩版本请联系作者获取。
 
 ## 制作与工具 / Credits
 
