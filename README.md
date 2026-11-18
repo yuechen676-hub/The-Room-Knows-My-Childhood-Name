@@ -21,7 +21,7 @@ This demo uses selectable lines and prerecorded model text. It includes the six-
 
 ## 联网模式说明 / Live dialogue
 
-项目包含联网自由对话实现，但联网源码补充包已停止公开下载。当前公开试玩使用离线预录对话，无需 API Key。系统设计见[联网模式说明](docs/LIVE-DIALOGUE.md)。
+项目包含联网自由对话实现，但联网源码补充包已停止公开下载，若想尝试联网API版本，请联系作者。当前公开试玩使用离线预录对话，无需 API Key。系统设计见[联网模式说明](docs/LIVE-DIALOGUE.md)。
 
 The live-dialogue source add-on is no longer publicly distributed. The downloadable demo runs offline without an API key.
 
